@@ -15,7 +15,7 @@ export const getRelease = async (tag = 'latest') => {
 
 export const githubMirror = (url: string) => {
   const mirrorURL = new URL(url)
-  mirrorURL.hostname = 'hub.fastgit.org'
+  mirrorURL.hostname = 'github.com.cnpmjs.org'
   console.log(mirrorURL);
   return mirrorURL.href
 }
